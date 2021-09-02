@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>CC</title>
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='./bootstrap-5.1.0-dist/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='./css/index.css') }}">
+        <script src="{{ url_for('static',filename='./bootstrap-5.1.0-dist/js/bootstrap.min.js')}}"></script>
+
+        <link rel="stylesheet" type="text/css"  href="../static/bootstrap-5.1.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css"  href="../static/css/index.css">
+    </head>
+    <body>
+        <div id = "Nav-sector">
+        <nav class="navbar navbar-dark bg-dark">
+            <div id = "login"class="container"><li style="color: white;">Kai</li></div>
+            <div id = "login"class="container"><a class="btn btn-primary" href="./login" style="margin-right:10px;">Login</a></div>
+            <div id = "toggle-menu"class="container-sm"><li><button id="te-button">fsdf</button><button>fsdf</button><button>fsdf</button><button>fsdf</button></li></div>
+          
+        </nav>
+        </div>
+        <div id="layout">
+            <div class="left-menu">
+                <div>
+                    <li style="color: white;">ALL</li>
+                    <li style="color: white;">For</li>
+                    <li style="color: white;">Testing</li>
+                </div>
+                <div>
+                    <iframe
+                    src="https://player.twitch.tv/?channel=esl_csgo&parent=www.populousoriginalstore.it"
+                    height="300"
+                    width="400"
+                    allowfullscreen="true">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-lg" style="margin-left: 0;">
+            <main>
+                <header class="Main-header">
+                    <h1><b>Testing</b></h1>
+                </header>
+                <article>
+                    <h1>Java</h1>
+                    <ol>
+                        <li><a href="javapage">JAVA LAB1</a><br></li>
+                        <li><a href="javapage">JAVA LAB2</a><br></li>
+                        <li><a href="javapage">JAVA LAB3</a><br></li>
+                        <li><a href="javapage">JAVA LAB4</a><br></li>
+                      </ol>
+
+                </article>
+            </main>
+        </div>
+        <div id="footer_sector">
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="{{ url_for('static',filename='./js/index.js')}}"></script>
+    </body>
+</html>
+

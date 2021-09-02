@@ -1,0 +1,29 @@
+:root{
+  background-color: rgb(247, 247, 247);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.left-menu{
+  position: fixed;
+  width: 400px;
+  background:#191818;
+  overflow-y: auto;
+}
+
+main{
+  margin-left: 320px;
+}
+.Main-header{
+  border-bottom: 1px solid;
+  bottom:40px;
+}
+
+html{
+  font-family:Arial, Helvetica, sans-serif;
+}
+pre.kikira code.kikira{
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  margin-right: 20%;
+}
