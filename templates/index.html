@@ -11,14 +11,19 @@
     <body>
         <div id = "Nav-sector">
         <nav class="navbar navbar-dark bg-dark">
-            <div id = "login"class="container"><li style="color: white;">Kai</li></div>
-            <div id = "login"class="container"><a class="btn btn-primary" href="./login" style="margin-right:10px;">Login</a></div>
-            <div id = "toggle-menu"class="container-sm"><li><button id="te-button">fsdf</button><button>fsdf</button><button>fsdf</button><button>fsdf</button></li></div>
-          
+            <div id = "Title" class="container"><h2 style="color: white;">Kai</h2></div>
+            <div class="btn-group" role="group" id="toggle-menu" aria-label="Basic example">
+                <button id="te-button" class="btn btn-primary">fsdf</button>
+                <button class="btn btn-primary">fsdf</button>
+                <button class="btn btn-primary">fsdf</button>
+                <button class="btn btn-primary">fsdf</button>
+        </div>
+            <div id = "login"><a class="btn btn-primary" href="./login" >Login</a></div>
+
         </nav>
         </div>
         <div id="layout">
-            <div class="left-menu">
+            <div class="container-sm" id= "left-menu">
                 <div>
                     <li style="color: white;">ALL</li>
                     <li style="color: white;">For</li>
@@ -35,7 +40,7 @@
 
             </div>
         </div>
-        <div class="container-lg" style="margin-left: 0;">
+        <div class="container-lg">
             <main>
                 <header class="Main-header">
                     <h1><b>Testing</b></h1>
@@ -53,10 +58,10 @@
             </main>
         </div>
         <div id="footer_sector">
-            <footer class="py-4 bg-light mt-auto">
+            <footer class="py-4 bg-light mt-auto" id ="footer_">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div class="text-muted">Copyright &copy; Testing 2021</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;
@@ -67,6 +72,10 @@
             </footer>
         </div>
         <script src="{{ url_for('static',filename='./js/index.js')}}"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
 

@@ -1,21 +1,42 @@
 :root{
   background-color: rgb(247, 247, 247);
   font-family: Arial, Helvetica, sans-serif;
+  height:fit-content;
 }
-.left-menu{
-  position: fixed;
+#left-menu{
+  position:static;
   width: 400px;
+  margin-left: 0px;
   background:#191818;
   overflow-y: auto;
+  height: 1200px;
+  float:left;
+}
+#left-menu li
+{
+  font-size: 1.3em;
+  padding: 10px 30px;
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+#left-menu li:hover
+{
+  background-color: #e29e9e;
+  color: #4a4a4a;
 }
 
 main{
-  margin-left: 320px;
+  padding-left: 400px;
+  height: 1200px;
+  margin: auto;
+  
 }
 .Main-header{
   border-bottom: 1px solid;
   bottom:40px;
 }
+
 
 html{
   font-family:Arial, Helvetica, sans-serif;
@@ -26,4 +47,24 @@ pre.kikira code.kikira{
   display: block;
   padding: 20px;
   margin-right: 20%;
+}
+#Title
+{
+  height: 40px;
+  width: 100%;
+}
+#login
+{
+height: 30px;
+max-width: 300px;
+width: 20%;
+float: right;
+padding-left: 100px;
+margin-right: 10px;
+}
+#toggle-menu
+{
+  height: 30px;
+  width: 80%;
+  max-width: 1200px;
 }
