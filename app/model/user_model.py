@@ -42,4 +42,16 @@ class User(db.Model,UserMixin):
             return item.name
     def name(self):
         return self.name
+
+
+class Article(db.Model):
+    __tablename__ = 'Article'
+    id = db.Column(db.Integer(), primary_key=True)
+    PublisherID=db.Column('PublisherID', db.Integer(),db.ForeignKey('user.id'))
     
+    title = db.Column(db.String(80), unique=False)
+    Summary = db.Column(db.String(255))
+    Content = db.Column(db.String(1000))
+
+
+
